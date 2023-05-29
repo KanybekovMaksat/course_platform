@@ -1,11 +1,12 @@
-
+import Routing from "./pages";
+import {WithRouter} from "./components/WithRouter";
+import "./index.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+        <Routing/>
     </div>
   );
 }
 
-export default App;
+export default WithRouter(App);
